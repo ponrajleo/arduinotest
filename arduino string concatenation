@@ -1,0 +1,21 @@
+void setup()
+{
+  Serial.begin(9600); 
+  }
+void loop()
+{
+  addprintout("ponraj","selvaraj",29);
+  addprintout("prabha","karan",28);
+ }
+ void addprintout(String name1,String name2 ,int a)
+ {
+  String result= name1+name2 ;//ponraj suganya
+  result += " age is ";
+  String year = String(a);
+  result += year;
+  result += " years old ";
+  Serial.println (result);
+  Serial.println (" @@@*******@@@@");
+  delay (2000);
+  }
+  
